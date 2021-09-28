@@ -21,7 +21,7 @@ Executar scripts:
 - `python manage.py runserver`
 
 Executar api em ambiente de desenvolvimento:
-API - Backend [http://localhost:80000](http://localhost:8000)
+API - Backend [http://localhost:8000](http://localhost:8000)
 ### Dependências:
 - djangorestframework
 - django
