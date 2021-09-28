@@ -1,38 +1,204 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  position: fixed;
+  width: 60px;
+  height: 100vh;
+  background: #2d3436;
+  float: left;
+  z-index: 33
+}
+
+.content {
+  width: calc(100% - 60px);
+  height: 100vh;
+  background: #ddd;
+  float: right;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
   text-align: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  color: white
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+  text-align: center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-options li {
+  position: relative;
+  font-size: 30px;
+  color: #636e72 !important;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-options li:hover {
+  color:#fff;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-options li:hover .menu-description{
+  transition: all linear 0.2s;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #fff
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-description {
+  white-space: nowrap;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 99999999;
+  height: 60px;
+  width: 0;
+  color: #fff;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  background: #2d3436;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 60px;
+  cursor: pointer;
+  font-size: 20px;
 }
+
+.default-link {
+  color: #636e72
+}
+
+.active-link {
+  color: #fff
+}
+
+.linkText{ color: white ; }
+
+/* Details weather */
+.color-primary {
+  background: #1b4de4;
+}
+
+.detail-header {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.detail-content {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  float: left;
+  padding: 10px;
+  color: #fff
+}
+
+.detail-date {
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+  color: #ddd
+}
+
+.detail-description {
+  font-size: 30px;
+}
+
+.detail-icon {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  font-size: 100px
+}
+
+.detail-degrees-max-min {
+  position: absolute;
+  bottom: 10%;
+  right: 20px;
+  font-size: 50px;
+}
+
+.detail-degrees {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 130px;
+  font-weight: bold;
+  top: 10px;
+  font-weight: 600
+}
+
+.text-right {
+  float: right
+}
+
+.text-degrees-max {
+  text-align: center;
+  font-size: 50px;
+  color: blue
+}
+
+.text-degrees-min {
+  text-align: center;
+  font-size: 30px;
+  color: blue
+}
+
+.text-percent {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px
+}
+
+.text-daily {
+  display: block;
+  font-size: 25px;
+  text-align: center
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.icon-daily {
+  font-size: 30px;
+  color: #ddd;
+}
+
+.history {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-daily:hover {
+  cursor: pointer;
+  color: darkcyan
+}
+
