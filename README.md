@@ -15,6 +15,8 @@ Frontend [http://localhost:3000](http://localhost:3000)
 - react-router-dom: 5.3.0
 
 ## BACKEND
+No momento a conexáo com o banco de dados está fixada no código, sendo necessário utilizar a configuração abaixo:
+`NAME=postgres, USER=postgres, PASSWORD=postgres, HOST=localhost, PORT=5432`
 Executar scripts:
 - `python manage.py makemigrations apiweather`
 - `python manage.py migrate`  
